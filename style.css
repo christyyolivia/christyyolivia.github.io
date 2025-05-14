@@ -1,91 +1,279 @@
-body{
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-
+body {
+  font-family: arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#fdfaf6;
 }
 
-header {
-    text-align: right;
-    padding: 20px;
+.window-bar {
+  display: flex;
+  padding: 10px 20px;
+  gap: 8px;
 }
 
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #FF5F56; }
+.yellow { background-color: #FFBD2E; }
+.green { background-color: #27C93F; }
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent;
+ 
+}
+
+.nav-buttons button{
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: none;
+    font-weight: bold;
+}
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  background-color: #efefef;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: #f9f6f2;
+  
+}
+
+.hero-content{
+   display: flex;
+  align-items: center;
+  gap: 40px; 
+  
+}
+
+hero-text h1 {
+    font-size: 36px;
     font-weight: bold;
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: white;
+hero-text p {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 30px;
-    object-fit: cover;
-}
-
-.intro h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-.name {
-    background-color: #eae0d5;
-    display: inline-block;
-    padding: 5px 15px;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-.about-contact {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 10%;
-    background-color: #ffffff;
-}
-
-.about, .contact {
-    width: 45%;
-}
-
-.about h2, .contact h2 {
-    background-color: #eae0d5;
-    display: inline-block;
+hero-text button{
     padding: 10px 20px;
-    font-size: 1.5em;
+    border: none;
+    background-color: #f3dfc1;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0,2);
+    cursor: pointer;
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;/*buat foto bulat*/
+  object-fit: cover;
 }
 
-.contact a {
-    display: block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #eae0d5;
-    text-decoration: none;
-    color: #000;
-    border-radius: 5px;
-    width: fit-content;
+:right{
+    text-align: right;
+}
+:right h1 {
+  margin: 0;
+  font-size: 36px;
 }
 
+:right p {
+  margin: 10px 0;
+  font-weight: bold;
+}
 
+h1 {
+  font-family: 'Georgia', serif;
+  font: size 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.name-box {
+   background-color: #f2e7da;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+  font-family: 'Georgia', serif;
+
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.about-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  font-family: 'Georgia', serif;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-text {
+  flex: 2;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #ccc;
+}
+
+.about-text h2 {
+  background-color: #d3d3d3;
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.about-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section { /*untuk contact button biar fotonya ga gede*/
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background: #fdfdfd;
+}
+
+.about-contact-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-box, .contact-box {
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+
+.about-box h2, .contact-box h2 { /*biarcontact box ga trlalu bawah*/
+  margin-bottom: 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.about-box p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.contact-box { /* buat tulisan contact ditengah klo gk ad gabakal ditengah*/
+  background-color: #eee;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Tengahkan teks di kotak */
+  max-width: 300px; /* Batasi lebar maksimal */
+  margin: 0 auto;   /* Tengahkan jika dibutuhkan */
+}
+
+.contact-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/*.contact-box {
+  background-color: #eee;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 30%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}*/
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Tengahkan ikon dan teks */
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+   margin: 0 auto 1rem auto;  /* Tengahkan tombol */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 80%;/* kasi jarak antar button*/
+}/*width: 100%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;*/
+
+
+.contact-btn:hover {
+  background: #ddd;
+}
+
+.contact-btn img { /*untuk contact button biar fotonya ga gede*/
+  width: 20px;
+  height: 20px;
+}
 
