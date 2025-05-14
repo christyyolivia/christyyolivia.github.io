@@ -1,0 +1,91 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+
+}
+
+header {
+    text-align: right;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.name {
+    background-color: #eae0d5;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.about-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10%;
+    background-color: #ffffff;
+}
+
+.about, .contact {
+    width: 45%;
+}
+
+.about h2, .contact h2 {
+    background-color: #eae0d5;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+.contact a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #eae0d5;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+
+
